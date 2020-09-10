@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <script src="https://kit.fontawesome.com/a04a71a8a5.js" crossorigin="anonymous"></script>
+
+        <title>Cadastro de Contatos</title>
+    </head>
+    <body>
+        <div>
+            <header>
+                <div>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a class="navbar-brand ml-5 h1" href="#">Busca por <span class="text-warning">CEPs</span>
+                            <i class="fas fa-map-marked-alt ml-2 text-warning"></i>
+                        </a>
+                    </nav>        
+                </div>
+            </header>
+
+            <section>
+                <div class="container">
+                    <h3 class="mt-4 mb-4">Dados da Pesquisa</h3>
+                </div>
+                <div class="container">
+                    <form id="formApp">
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label for="cep">CEP</label>
+                                <input name="cep" type="text" class="form-control" maxlength="9" id="cep" autocomplete="none">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-8">
+                                <label for="logradouro">Endereço</label>
+                                <input name="logradouro" type="text" class="form-control" id="logradouro" placeholder="Rua...">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="bairro">Bairro</label>
+                                <input name="bairro" type="text" class="form-control" id="bairro" placeholder="Rua...">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-5">
+                                <label for="complemento">Complemento</label>
+                                <input name="complemento" type="text" class="form-control" id="complemento" placeholder="Apartamenot, lote, vila...">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="localidade">Cidade</label>
+                                <input name="localidade" type="text" class="form-control" id="localidade">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="uf">Estado</label>
+                                <input name="uf" type="text" class="form-control" id="uf">
+                            </div>
+                        </div>
+                    </form>
+                    <button type="submit" value="Limpa" onclick="limparCampos()" class="btn btn-info mt-3">Limpar</button>
+                </div>
+            </section>
+            
+            <footer class="font-small bg-dark mt-3 fixed-bottom">
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+                  <a href="https://mdbootstrap.com/"> Marcio A. Nascimento</a>
+                </div>
+                <!-- Copyright -->
+              
+              </footer>
+
+        </div>
+    
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
